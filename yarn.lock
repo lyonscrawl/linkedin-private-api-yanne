@@ -2649,6 +2649,13 @@ is-ci@^2.0.0:
   dependencies:
     ci-info "^2.0.0"
 
+is-core-module@^2.11.0:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.12.0.tgz#36ad62f6f73c8253fd6472517a12483cf03e7ec4"
+  integrity sha512-RECHCBCd/viahWmwj6enj19sKbHfJrddi/6cBDsNTKbNq0f7VeaUkBo60BqzvPqo/W54ChS62Z5qyun7cfOMqQ==
+  dependencies:
+    has "^1.0.3"
+
 is-core-module@^2.8.1:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.9.0.tgz#e1c34429cd51c6dd9e09e0799e396e27b19a9c69"
@@ -4209,13 +4216,13 @@ queue-microtask@^1.2.2:
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-quibble@^0.6.7:
-  version "0.6.8"
-  resolved "https://registry.yarnpkg.com/quibble/-/quibble-0.6.8.tgz#cd7d485e5fd985217b8f064596523a3ee554ec00"
-  integrity sha512-HQ89ZADQ4uZjyePn1yACZADE3OUQ16Py5gkVxcoPvV6IRiItAgGMBkeQ5f1rOnnnsVKccMdhic0xABd7+cY/jA==
+quibble@^0.6.17:
+  version "0.6.17"
+  resolved "https://registry.yarnpkg.com/quibble/-/quibble-0.6.17.tgz#1c47d40c4ee670fc1a5a4277ee792ca6eec8f4ca"
+  integrity sha512-uybGnGrx1hAhBCmzmVny+ycKaS5F71+q+iWVzbf8x/HyeEMDGeiQFVjWl1zhi4rwfTHa05+/NIExC4L5YRNPjQ==
   dependencies:
     lodash "^4.17.21"
-    resolve "^1.20.0"
+    resolve "^1.22.1"
 
 randomatic@^3.0.0:
   version "3.1.1"
@@ -4362,6 +4369,15 @@ resolve@^1.1.6, resolve@^1.10.0, resolve@^1.12.0, resolve@^1.18.1, resolve@^1.20
   integrity sha512-Hhtrw0nLeSrFQ7phPp4OOcVjLPIeMnRlr5mcnVuMe7M/7eBn98A3hmFRLoFo3DLZkivSYwhRUJTyPyWAk56WLw==
   dependencies:
     is-core-module "^2.8.1"
+    path-parse "^1.0.7"
+    supports-preserve-symlinks-flag "^1.0.0"
+
+resolve@^1.22.1:
+  version "1.22.2"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.2.tgz#0ed0943d4e301867955766c9f3e1ae6d01c6845f"
+  integrity sha512-Sb+mjNHOULsBv818T40qSPeRiuWLyaGMa5ewydRLFimneixmVy2zdivRl+AF6jaYPC8ERxGDmFSiqui6SfPd+g==
+  dependencies:
+    is-core-module "^2.11.0"
     path-parse "^1.0.7"
     supports-preserve-symlinks-flag "^1.0.0"
 
@@ -4829,12 +4845,12 @@ testdouble-jest@^2.0.0:
   integrity sha512-+Ny3/ZtLcPBXZaVdLXYDDmZtCe5Erx/Rr8scLisFSHR763eHIEh4dGrISfENc+ezvhMLH1GvgSpZjagdv6l3yQ==
 
 testdouble@^3.16.1:
-  version "3.16.6"
-  resolved "https://registry.yarnpkg.com/testdouble/-/testdouble-3.16.6.tgz#3e3fce4a5c8681378b6c7a6d18884746a9dfb1e8"
-  integrity sha512-mijMgc9y7buK9IG9zSVhzlXsFMqWbLQHRei4SLX7F7K4Qtrcnglg6lIMTCmNs6RwDUyLGWtpIe+TzkugYHB+qA==
+  version "3.17.2"
+  resolved "https://registry.yarnpkg.com/testdouble/-/testdouble-3.17.2.tgz#a7d624c2040453580b4a636b3f017bf183a8f487"
+  integrity sha512-oRrk1DJISNoFr3aaczIqrrhkOUQ26BsXN3SopYT/U0GTvk9hlKPCEbd9R2uxkcufKZgEfo9D1JAB4CJrjHE9cw==
   dependencies:
-    lodash "^4.17.15"
-    quibble "^0.6.7"
+    lodash "^4.17.21"
+    quibble "^0.6.17"
     stringify-object-es5 "^2.5.0"
     theredoc "^1.0.0"
 
